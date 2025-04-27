@@ -87,7 +87,7 @@ def get_single_response():
             "uid": uid,
             "status": "invalid",
             "message": "Wrong UID or Password. Please check and try again.",
-            "credit": "@uditanshu_sarkar"
+            "credit": "@uditanshu_sarkar&@DarkBhaiFan"
         }), 400
 
     game_data = my_pb2.GameData()
