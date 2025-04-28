@@ -176,6 +176,7 @@ def get_single_response():
                 })
             except Exception as e:
                 return jsonify({
+                    "region": region,
                     "uid": uid,
                     "error": f"Failed to deserialize the response: {str(e)}"
                 }), 400
