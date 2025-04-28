@@ -170,14 +170,16 @@ def get_single_response():
                 example_msg.ParseFromString(response.content)
                 response_dict = parse_response(str(example_msg))
                 return jsonify({
-                    "region": region,
+                    "api owner":"@DarkBhaiFan",   
+                    "credits":"@uditanshu_sarkar",
                     "uid": uid,
                     "status": response_dict.get("status", "N/A"),
                     "token": response_dict.get("token", "N/A")
                 })
             except Exception as e:
                 return jsonify({
-                    "region": region,
+                     "api owner":"@DarkBhaiFan",   
+                    "credits":"@uditanshu_sarkar",
                     "uid": uid,
                     "error": f"Failed to deserialize the response: {str(e)}"
                 }), 400
