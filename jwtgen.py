@@ -170,6 +170,7 @@ def get_single_response():
                 example_msg.ParseFromString(response.content)
                 response_dict = parse_response(str(example_msg))
                 return jsonify({
+                    "region": region,
                     "uid": uid,
                     "status": response_dict.get("status", "N/A"),
                     "token": response_dict.get("token", "N/A")
