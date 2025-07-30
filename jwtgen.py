@@ -10,7 +10,7 @@ import json
 from colorama import init
 import warnings
 from urllib3.exceptions import InsecureRequestWarning
-import jwt  # Added for JWT validation/decoding
+import jwt  # For JWT decoding
 
 # Disable SSL warning
 warnings.filterwarnings("ignore", category=InsecureRequestWarning)
@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore", category=InsecureRequestWarning)
 # Constants
 AES_KEY = b'Yg&tc%DEuh6%Zc^8'
 AES_IV = b'6oyZDr22E3ychjM%'
-GITHUB_TOKEN_URL = "https://raw.githubusercontent.com/RskPowerPz/rahul-x-jwt/main/token.json"  # Replace with your actual GitHub token.json URL
+GITHUB_TOKEN_URL = "https://raw.githubusercontent.com/RskPowerPz/rahul-x-jwt/main/token.json"
 
 # Init colorama
 init(autoreset=True)
