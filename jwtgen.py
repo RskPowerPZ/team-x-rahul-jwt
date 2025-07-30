@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore", category=InsecureRequestWarning)
 # Constants
 AES_KEY = b'Yg&tc%DEuh6%Zc^8'
 AES_IV = b'6oyZDr22E3ychjM%'
-GITHUB_TOKEN_URL = "https://raw.githubusercontent.com/RskPowerPz/rahul-x-jwt/main/token.json"
+GITHUB_TOKEN_URL = "https://raw.githubusercontent.com/RskPowerPz/team-x-rahul-jwt/main/token.json"
 
 # Init colorama
 init(autoreset=True)
