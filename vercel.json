@@ -1,15 +1,16 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "jwtgen.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "jwtgen.py"
-    }
-  ]
+    "version":2,
+    "builds": [
+        {
+            "src":"./index.py",
+            "use": "@vercel/python",
+            "config":{"runtime":"python3.8"}
+        }
+    ],
+    "routes": [
+        {
+            "src":"/(.*)",
+            "dest":"/"
+        }
+    ]
 }
