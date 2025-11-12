@@ -165,7 +165,7 @@ def add_friend():
     headers = {
         "Content-Type": "application/x-www-form-urlencoded",
         "X-GA": "v1 1",
-        "ReleaseVersion": "OB50",
+        "ReleaseVersion": "OB51",
         "Accept-Encoding": "gzip, deflate, br",
         "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8",
         "User-Agent": "Free%20Fire/2019117061 CFNetwork/1399 Darwin/22.1.0",
@@ -220,7 +220,7 @@ def remove_friend_api():
         'Expect': "100-continue",
         'X-Unity-Version': "2018.4.11f1",
         'X-GA': "v1 1",
-        'ReleaseVersion': "OB50",
+        'ReleaseVersion': "OB51",
         'Host': host
     }
 
